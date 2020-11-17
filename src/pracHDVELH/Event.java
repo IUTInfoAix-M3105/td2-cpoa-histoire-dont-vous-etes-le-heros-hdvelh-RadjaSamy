@@ -17,11 +17,19 @@ public class Event extends NodeMultiple {
 	public static final String ERROR_MSG_UNEXPECTED_END = "Sorry, for some unexpected reason the story ends here...";
 	public static final String PROMPT_ANSWER = "Answer: ";
 	public static final String WARNING_MSG_INTEGER_EXPECTED = "Please input a integer within range!";
+	private GUIManager gui;
+	private String s;
+
+	public Event(GUIManager gui, String s) {
+		this.gui = gui;
+		this.s = s;
+	}
 
 	/**
 	 * @return the playerAnswer
 	 */
 	public String getPlayerAnswer() {
+		return "";
 		/* TO BE COMPLETED */
 	}
 
@@ -36,6 +44,8 @@ public class Event extends NodeMultiple {
 	 * @return the reader
 	 */
 	public Scanner getReader() {
+		Scanner obj = new Scanner(System.in);
+		return obj;
 		/* TO BE COMPLETED */
 	}
 
@@ -50,6 +60,7 @@ public class Event extends NodeMultiple {
 	 * @return the chosenPath
 	 */
 	public int getChosenPath() {
+		return 0;
 		/* TO BE COMPLETED */
 	}
 
@@ -65,6 +76,7 @@ public class Event extends NodeMultiple {
 	 * @see pracHDVELH.NodeMultiple#getData()
 	 */
 	public String getData() {
+		return "";
 		/* TO BE COMPLETED */
 	}
 
@@ -81,6 +93,9 @@ public class Event extends NodeMultiple {
 	 */
 	@Override
 	public Event getDaughter(int i) {
+		Event daughter = new Event(gui, "");
+		return daughter;
+
 		/* TO BE COMPLETED */
 	}
 
@@ -97,6 +112,8 @@ public class Event extends NodeMultiple {
 	 * @return the gui
 	 */
 	public GUIManager getGui() {
+		GUIManager gui = new GUIManager();
+		return gui;
 		/* TO BE COMPLETED */
 	}
 
@@ -104,19 +121,19 @@ public class Event extends NodeMultiple {
 	 * @param gui the gui to set
 	 */
 	public void setGui(GUIManager gui) {
-		/* TO BE COMPLETED */
+		return;
 	}
 
 	/**
 	 * @return the id
 	 */
 	public int getId() {
+		return 0;
 		/* TO BE COMPLETED */
 	}
 
 	/* Methods */
 	/* TO BE COMPLETED */
 	}
-}
 
 // eof

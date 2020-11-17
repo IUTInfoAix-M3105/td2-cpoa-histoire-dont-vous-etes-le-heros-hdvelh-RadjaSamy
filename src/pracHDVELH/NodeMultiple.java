@@ -19,6 +19,7 @@ public class NodeMultiple {
 	/* Overridden methods */
 	@Override
 	public String toString() {
+		return "";
 		/* TO BE COMPLETED */
 	}
 
@@ -32,6 +33,8 @@ public class NodeMultiple {
 	 * @return the {@code i}th daughter node, or {@code null} if it does not exist.
 	 */
 	public NodeMultiple getDaughter(int i) {
+		NodeMultiple node = new NodeMultiple();
+		return node;
 		/* TO BE COMPLETED */
 	}
 
@@ -57,6 +60,8 @@ public class NodeMultiple {
 	 * @return all the daughters
 	 */
 	public NodeMultiple[] getDaughters() {
+		NodeMultiple[] node = new NodeMultiple[0];
+		return node;
 		/* TO BE COMPLETED */
 	}
 
@@ -75,7 +80,9 @@ public class NodeMultiple {
 	 * 
 	 * @param daughter
 	 */
-	public void addDaughter(NodeMultiple daughter) {
+	public Object addDaughter(NodeMultiple daughter) {
+		Object obj = new Object();
+		return obj;
 		/* TO BE COMPLETED */
 	}
 
@@ -83,6 +90,8 @@ public class NodeMultiple {
 	 * @return the content data
 	 */
 	public Object getData() {
+		Object obj = new Object();
+		return obj;
 		/* TO BE COMPLETED */
 	}
 
@@ -98,6 +107,7 @@ public class NodeMultiple {
 	 *         daughter node.
 	 */
 	public boolean hasDaughters() {
+		return true;
 		/* TO BE COMPLETED */
 	}
 
@@ -117,6 +127,6 @@ public class NodeMultiple {
 	 */
 	public NodeMultiple(Object data) {
 		/* TO BE COMPLETED */
-}
+}}
 
 // eof
